@@ -30,7 +30,7 @@ export declare class DtsContent {
     get inputFilePath(): string;
     get relativeInputFilePath(): string;
     checkFile(postprocessor?: (formatted: string) => string): Promise<boolean>;
-    writeFile(postprocessor?: (formatted: string) => string): Promise<void>;
+    writeFile(postprocessor?: (_: string) => Promise<string> | string): Promise<void>;
     private createResultList;
     private getConvertKeyMethod;
     /**

@@ -14,7 +14,6 @@
     "test:watch": "jest --watch",
     "test:ci": "jest --coverage",
     "prepublish": "npm run build",
-    "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable"
   },
